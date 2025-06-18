@@ -1,0 +1,30 @@
+{
+    "general": [
+        "NVDA", "AAPL", "MSFT", "AMZN", "META", "AVGO", "GOOGL", "BRK.B", "TSLA",
+        "JPM", "WMT", "LLY", "V", "ORCL", "NFLX", "MA", "XOM", "COST", "PG",
+        "JNJ", "HD", "BAC", "ABBV", "CRM", "CVX", "ASML", "KO", "TMO", "WFC",
+        "ADBE", "TMUS", "DIS", "NOW", "IBM", "GE", "CAT", "AXP", "INTC", "TXN",
+        "VZ", "LOW", "INTU", "UNH", "QCOM", "SPGI", "RTX", "PFE", "BKNG", "AMD"
+    ],
+    "technology": [
+        "AAPL", "MSFT", "NVDA", "GOOGL", "META", "AVGO", "ORCL", "NFLX", "ADBE",
+        "CRM", "NOW", "INTC", "AMD", "QCOM", "TXN", "LRCX", "KLAC", "AMAT", "MRVL",
+        "SNPS", "CDNS", "FTNT", "PANW", "CRWD", "ZS", "OKTA", "TEAM", "WDAY",
+        "SNOW", "PLTR", "RBLX", "TWLO", "ZM", "UBER", "LYFT", "SHOP", "SPOT",
+        "PINS", "SNAP", "DOCU", "NET", "DDOG", "FSLY", "CFLT"
+    ],
+    "artificial_intelligence": [
+        "NVDA", "MSFT", "GOOGL", "META", "AAPL", "AMZN", "TSLA", "ORCL", "IBM",
+        "PLTR", "AI", "ADBE", "CRM", "NOW", "SNOW", "CRWD", "PANW", "AMD", "INTC",
+        "AVGO", "MRVL", "LRCX", "KLAC", "AMAT", "SNPS", "CDNS", "MU", "DDOG", "NET",
+        "PATH", "UPST", "SOUN", "BBAI", "AMBA", "SMCI", "ARM", "RBLX", "ZS", "OKTA",
+        "TWLO", "ZM", "UBER", "LYFT", "SHOP", "WDAY", "TEAM", "VEEV"
+    ],
+    "military": [
+        "LMT", "RTX", "NOC", "GD", "BA", "HII", "TDG", "LHX", "TXT", "CW",
+        "KTOS", "AJRD", "HXL", "MOG.A", "AIR", "MRCY", "PLXS", "ATRO", "AVAV", "CACI",
+        "SAIC", "LDOS", "VLTO", "KBR", "VSAT", "BWXT", "BWX", "POWL", "CDTI", "MYNA",
+        "RELL", "OSK", "ESLT", "CUB", "NPK", "MANT", "KERO", "KRNT", "DGII", "CPSH",
+        "VRNS", "OSIS", "NPTN", "KALU", "ARTX", "AMSC", "SPIR", "ROIC", "MGRC", "COHU"
+    ]
+}

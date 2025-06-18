@@ -8,7 +8,7 @@ from utils import finnhub_client, extract_concept
 def get_history(symbol):
 
     tk = yf.Ticker(symbol)
-    history = tk.history(period='4y')
+    history = tk.history(period='2y', interval='1wk')
     history.index = history.index.date
     history = history[::-1]
 
@@ -19,7 +19,7 @@ def get_profits(q_report):
     symbol = q_report['symbol']
     data = []
 
-    for quarter in q_report['data'][:17]:
+    for quarter in q_report['data'][:9]:
         accepted_date = datetime.fromisoformat(quarter['acceptedDate'][:10]).date()
         profit = extract_concept(quarter, 'profit')
         data.append((accepted_date, profit))
@@ -57,7 +57,12 @@ def add_profits_to_history(history_df, profits_df):
 def aggregate_history_with_profits(symbol):
 
     ticker = yf.Ticker(symbol)
-    num_shares = ticker.info['sharesOutstanding']
+    try:
+        num_shares = ticker.info['sharesOutstanding']
+    except KeyError as e:
+        print(f"Warning: Could not retrieve sharesOutstanding for {symbol}")
+        print(ticker.info.keys())
+        raise e
     history = get_history(symbol)
     q_reports = finnhub_client.financials_reported(symbol=symbol, freq='quarterly')
     profits = get_profits(q_reports)
