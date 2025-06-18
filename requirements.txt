@@ -1,0 +1,8 @@
+pandas
+yfinance
+finnhub-python
+python-dotenv
+memory-profiler
+jupyter
+notebook
+ipykernel
